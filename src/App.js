@@ -8,8 +8,8 @@ import { DataProvider } from './Context/Dataprovider';
 import { Carrito } from './componentes/Carrito';
 import SobreNosotros from './componentes/SobreNosotros';
 import PaginaInexistente from './componentes/paginainexistente';
-
-function App() {
+import Contacto from './componentes/Contacto';
+ function App() {
   return (
     <DataProvider>
       <div className="App">
@@ -19,11 +19,12 @@ function App() {
             <Route path="/" element={<Inicio />} />
             <Route path="/productos" element={<ProductosLista />} />
             <Route path="/sobrenosotros" element={<SobreNosotros />} />
+            <Route path="/contacto" element={<Contacto />} />           
             <Route path='*' element={<PaginaInexistente />} />
            </Routes>
         </Router>
         <Carrito />
-      </div>
+       </div>
     </DataProvider>
   );
 }
