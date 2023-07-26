@@ -121,7 +121,7 @@ const Data = {
   cantidad: 1,
 },
 {
-  id: 12,
+  id: 16,
   title: "Joystick Playstation 4",
   price: 48500,
   image: require('./imagenes/play4.png'),
