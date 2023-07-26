@@ -19,8 +19,7 @@ const ProductosLista = () => {
 
   return (
     <>
-      <h1 className='title'>PRODUCTOS</h1>
-      <div className=''>
+       <div className='buscador'>
         <input
           type='text'
           placeholder='Buscar productos...'
