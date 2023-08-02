@@ -25,6 +25,10 @@ code {
 }
 
 /*-----HEADER-----*/
+
+.hamburger-menu{
+  display: none;
+}
 header {
   width: 100%;
   min-height: 100px;
@@ -74,8 +78,8 @@ header .cart {
 }
 
 header .cart box-icon {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
 }
 
 header .cart span {
@@ -480,6 +484,44 @@ button {
 }
 
 
+/* Estilos para el menú hamburguesa */
+.hamburger-menu {
+  display: block;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.hamburger-menu .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #6d3ad6;
+  margin: 6px 0;
+  transition: all 0.3s ease;
+  
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Estilos para el menú lateral */
+.hambuger-menu-links {
+  display: none;
+}
+
+.hambuger-menu-links.showMenu {
+  display: block;
+}
+
+
 
 /*------media ------*/
 
@@ -487,6 +529,21 @@ button {
   header ul {
     display: none;
   }
+
+.sobre p{
+  text-align: left;
+}
+.tienda p{
+  text-align: left;}
+
+  .tienda ol{
+    text-align: left;
+    text-decoration: none;}
+  
+    .tienda li{
+      text-align: left;}
+    
+
 }
 
 @media screen and (max-width: 450px) {
@@ -508,4 +565,55 @@ button {
     width: 40px;
     height: 40px;
   }
+  header .cart box-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  header .cart span {
+    position: absolute;
+    top: -1rem;
+    right: -1.2rem;
+    width: 1.9rem;
+    height: -1.5rem;
+    border: 1p solid #ff0000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: crimson;
+  }
+  
 }
+
+@media screen and (max-width: 800px) {
+  .hambuger-menu-links {
+    text-align: center;
+    margin-top: 5rem; /* Espacio entre el botón y los enlaces */
+    
+  }
+
+  .hambuger-menu-links ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .hambuger-menu-links.showMenu {
+    display: block;
+    position: absolute;
+    background-color: white;
+    box-shadow: 3px 5px 1px  #674c9c;
+    top: 110px ; /* Altura del botón y margen */
+    left: 0;
+    transition: all 0.3s ease;
+    margin: 1rem;
+    
+  }
+}
+
+
