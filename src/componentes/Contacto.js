@@ -48,7 +48,7 @@ const Contacto = () => {
           required
         />
 
-        <label htmlFor="message" id='etiquetas'>¿Que deseas escribirnos?</label>
+        <label htmlFor="message" id='etiquetas'>¿Qué deseas escribirnos?</label>
         <textarea
           id="message"
           name="message"
