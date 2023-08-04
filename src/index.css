@@ -558,16 +558,36 @@ button {
     height: 100%;
     font-size: 1.2rem;
   }
-  .carrito__item h3 {
-    margin-top: 0.5rem;
-  }
+ 
   .carrito__item .remove__item box-icon {
     width: 40px;
     height: 40px;
   }
+
+  .carrito__item img {
+    padding: 2.5rem;
+    width: 8rem;
+    margin-left: -1.9rem;
+  }
+  
+  .carrito__item h3 {
+    margin-top: 1.6rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-left: -1.5rem;
+  }
+
   header .cart box-icon {
     width: 45px;
     height: 45px;
+  }
+
+  .carrito__item .price {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: start;
+    margin-left: -2.1rem;
   }
 
   header .cart span {
@@ -587,7 +607,18 @@ button {
     font-weight: 700;
     background-color: crimson;
   }
-  
+
+  .carrito__item box-icon {
+    fill: #674c9c;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 0.3rem;
+    margin-right: 1.1rem;
+    margin-left: -0.2rem;
+  }
+
+   
 }
 
 @media screen and (max-width: 800px) {
